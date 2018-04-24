@@ -1,0 +1,33 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 150px;
+  background-color: "#ffdf00"
+}
+h1{
+  font-weight: lighet;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+.Inputsection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+.inputs{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-top: 10px;
+}
+
+.add {
+  margin-top: 3px;
+  color: black;
+  text-emphasis-color: "#ffdf00"
+}
