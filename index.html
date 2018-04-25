@@ -13,7 +13,19 @@
          </div>
          <button class="add">Add</button>
        </div>
+       <div class="result"></div>
        <button>Go!</button>
-           <img src="https://www.omvarlden.se/imagevault/publishedmedia/kzxv5khopo5vuoekzulj/mattema_1.jpg" alt="mums" height="400"
+           <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+           <script>
+           $(function() {
+             $('.result').hide()
+             var add_option = function() {
+               $('.inputs').append('<input></input>')
+             }
+             $('.add').click(add_option)
+           })
+
+
+           </script>
   </body>
 </html>
