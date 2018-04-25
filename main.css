@@ -2,12 +2,11 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin-top: 150px;
-  background-color: "#ffdf00"
 }
 h1{
-  font-weight: lighet;
+  font-weight: lighter;
   font-size: 50px;
   letter-spacing: 2px;
   margin-bottom: 0px;
@@ -27,7 +26,7 @@ input{
 }
 
 .add {
-  margin-top: 3px;
+  margin-top: 6px;
   color: black;
   text-emphasis-color: "#ffdf00"
 }
