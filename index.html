@@ -6,7 +6,9 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class="head">
     <h1>Help me choose between...</h1>
+  </div>
        <div class="Inputsection">
          <div class="inputs">
            <input placeholder="????"></input>
@@ -14,7 +16,7 @@
          <button class="add">Add</button>
        </div>
        <div class="result"></div>
-       <button>Go!</button>
+       <button class="submit">Go!</button>
            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
            <script>
            $(function() {
@@ -23,9 +25,20 @@
                $('.inputs').append('<input></input>')
              }
              $('.add').click(add_option)
+             var options = [];
+             var submit = function() {
+               $('.Inputsection').hide()
+               $('.result').css('display', 'flex')
+               $('input').each(function(){
+                 options.push($(this).val())
+               })
+               var winner = options[Math.floor(Math.random() * options.length)]
+               console.log(winner)
+               $('.result').text(winner)
+               $(".head").html("THE WINNER IS");
+             }
+             $('.submit').click(submit)
            })
-
-
            </script>
   </body>
 </html>
